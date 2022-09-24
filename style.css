@@ -1,1 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,400&display=swap');
+
+/* font-family: 'Cormorant Infant', serif;
+font-family: 'Josefin Sans', sans-serif; */
+
+body {
+    font-family: 'Josefin Sans', sans-serif; ;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #292E36;
+    font-size: 22px;
+}
+
+
+.header__contact {
+    padding: 30px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__phone {
+    width: 295px;
+    height: 73px;
+    border: 2px solid #E1B168;
+    color: #fff;
+}
+
+.header__reserv {
+    border: 2px solid #E1B168;
+    width: 295px;
+    height: 73px;
+    background-color: #E1B168;
+    color: #fff;
+}
+
+hr {
+    border: 1px solid #5C6168;
+
+}
+
+.header__link {
+    padding: 30px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav ul {
+    color: #FFFFFF;
+    display: flex;
+    gap: 50px;
+}
+
+.header__nav li:first-child {
+    color: #E1B168;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
