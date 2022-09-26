@@ -186,3 +186,86 @@ hr {
     line-height: 30px;
     padding-top: 15px;
 }
+
+.menu {
+    display: flex;
+    padding: 120px 40px 140px 40px;
+}
+
+.menu__specialdish {
+    width: 491.25px;
+    height: 955px;
+}
+
+.menu__section {
+    font-size: 15px;
+    text-transform: uppercase;
+    border-top: 1px solid #E1B168;
+    border-bottom: 1px solid #E1B168;
+    padding-top: 4px;
+    display: inline-block;
+}
+
+.menu__title {
+    font-family: 'Cormorant Infant';
+    font-size: 40px;
+    padding-top: 12px;
+}
+
+.menu__desc {
+    padding-top: 13px;
+    width: 486px;
+    line-height: 30px;
+}
+
+.menu__image {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.menu__list {
+    width: 818.75px;
+}
+
+.menu__dish {
+    font-family: 'Cormorant Infant';
+    font-size: 36px;
+    padding-bottom: 40px;
+}
+
+.menu__position {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.menu__logo {
+    width: 100px;
+}
+
+.menu__name {
+    font-family: 'Cormorant Infant';
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.menu__price {
+    font-family: 'Cormorant Infant';
+    font-size: 30px;
+    line-height: 40px;
+    position: relative;
+}
+
+.menu__description {
+    
+    
+}
+
+.menu__price::before {
+    position:absolute;
+    content: " ";
+    height: 2px;
+    border-bottom: 1px solid #AAAAAA;
+    width: 259.73px;
+    bottom: 0;
+}
+
