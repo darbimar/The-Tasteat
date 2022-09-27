@@ -215,7 +215,6 @@ hr {
 
 .desc {
     padding-top: 13px;
-    width: 486px;
     line-height: 30px;
 }
 
@@ -279,4 +278,172 @@ hr {
 
 .testimonial {
     background-color: #292E36;
+
+}
+
+.testimonial__wrapper {
+    padding: 145px 40px 120px 40px;
+}
+
+.section--white, .title--white, .desc--white {
+    color:#fff
+}
+
+.testimonial__clients{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.testimonial__client {
+    padding: 0 40px;
+    width: 544px;
+}
+
+.testimonial_content {
+    display: flex;
+}
+
+.testimonial__client {
+    background-color: #343942;
+}
+
+.testimonial__data {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonial__name {
+    font-family: 'Cormorant Infant';
+    font-size: 30px;
+    line-height: 42px;
+    color: white;
+}
+
+.testimonial__city {
+    color: #E1B168;
+    line-height: 30px;
+
+}
+
+.testimonial__text {
+    font-family: 'Cormorant Infant';
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.testimonial__line {
+
+    border-bottom: 2px solid #AAAAAA;
+    width: 464px;
+    margin-top: 30px;
+    margin-bottom: 32px;
+
+}
+
+.testimonial__logo {
+    position: absolute;
+    z-index: +1;
+}
+
+.testimonial__photo {
+    position: relative;
+}
+
+.offers {
+    padding: 145px 40px 120px 40px;
+}
+
+.offers__desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.desc--center {
+    text-align: center;
+}
+
+.offers__dishes { 
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.offers__dish {
+    background-image: url('img/back1.png');   
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 665px;
+    height: 409px;
+}
+
+.offers__cloud {
+    width: 167px;
+    height: 104px;
+    position: relative;
+}
+
+.offers__cloud img{
+    position: absolute;
+    top: 3px;
+    left: 10px;
+
+}
+
+
+.offers__cloud h2 {
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: -2px;
+    left: 54px;
+}
+
+.offers__price {
+    font-family: 'Cormorant Infant';
+    font-size: 60px;
+    position: absolute;
+    top: 7px;
+    left: 37px;
+}
+
+.section--black{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.offers__description {
+    margin-top: 37px;
+}
+
+.offers__name {
+    margin-top: 8px;
+    font-family: 'Cormorant Infant';
+    font-size: 40px;
+}
+
+.offers__consist {
+    margin-top: 5px;
+    line-height: 30px;
+}
+
+.offers__image {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.white {
+    color: white;
+}
+
+.grey {
+    background-image: url('img/back2.png'); 
 }
