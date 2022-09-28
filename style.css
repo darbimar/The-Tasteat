@@ -358,10 +358,11 @@ hr {
     padding: 145px 40px 120px 40px;
 }
 
-.offers__desc {
+.desc {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .desc--center {
@@ -446,4 +447,109 @@ hr {
 
 .grey {
     background-image: url('img/back2.png'); 
+}
+
+.popular {
+    padding: 145px 40px 120px 40px;
+}
+
+.popular__dishes {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.popular__dish {
+    width: 318px;
+}
+
+.popular__title {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Cormorant Infant';
+    font-size: 30px;
+    padding: 10px 0;
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 15px;
+}
+
+.popular__title:hover {
+    font-weight: 700;
+}
+
+.button--center {
+    display: block;
+    margin: 20px auto;
+}
+
+.services {
+    background-color: #292E36;
+    padding: 140px 40px;
+    display: flex;
+    gap: 90px;
+}
+
+.services__box {
+    display: flex;
+    gap: 30px;
+}
+
+.service__item {
+    width: 254px;
+    height: 235px;
+    border: 20px solid #343942;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.service__item h2 {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.blog {
+    padding: 140px 40px 100px 40px;
+}
+
+.blog__news {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.blog__new {
+    margin-top: 20px;
+    width: 640px;
+}
+
+.blog__text {
+    padding: 50px 46px 38px 46px;
+    border: 1px solid #C4C4C4;
+}
+
+.blog__title {
+    font-family: 'Cormorant Infant';
+    font-size: 30px;
+    margin-top: 26px;
+    margin-bottom: 24px;
+}
+
+.dark {
+    filter: brightness(40%);
+}
+
+.blog--center {
+    position: relative;
+}
+
+.button--position {
+    position: absolute;
+    right: 171px;
+    top: 156px;
+    z-index: +1;
 }
