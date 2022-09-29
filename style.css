@@ -358,7 +358,7 @@ hr {
     padding: 145px 40px 120px 40px;
 }
 
-.desc {
+.description {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -552,4 +552,131 @@ hr {
     right: 171px;
     top: 156px;
     z-index: +1;
+}
+
+.reservation {
+    background-image: url('img/rest5.jpg');
+    height: 977px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation__form {
+    padding: 140px 140px 156px 140px;
+    width: 920px;
+    height: 697px;
+    background-color: #292E36;
+    opacity: 0.95;
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+
+.form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input {
+    height: 70px;
+    width: 307px;
+    padding: 0 20px;
+    background: rgba( 0,0,0,.0);
+    border: 2px solid #858585;
+    outline: none;
+}
+
+.form__input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form__input2 {
+    height: 70px;
+    width: 198px;
+    padding: 0 23px;
+    background: rgba( 0,0,0,.0);
+    border: 2px solid #858585;
+    outline: none;
+}
+
+.reservation__button {
+    display: flex;
+    justify-content: center;
+}
+
+
+.button--white {
+    width: 242px;
+    background-color: #fff;
+    color: #000000;
+    border: none;
+}
+
+.footer {
+    background-color: #292E36;
+    padding: 100px 40px 40px 81px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "hashtag logo socials"
+                         "contact form schedule";
+}
+
+.footer__hashtag {
+    grid-area: hashtag;
+    display: flex;
+    align-items: end;
+    padding-bottom: 56px;
+}
+
+.footer__logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+}
+
+.socials--footer {
+    grid-area: socials;
+    display: flex;
+    align-items: end;
+    padding-bottom: 56px;
+    justify-content: end;
+}
+
+.footer__contacts{
+    grid-area: contact;
+    padding-top: 61px;
+}
+
+.form__footer {
+    grid-area: form;
+    padding-top: 11px;
+}
+
+.footer__schedule {
+    grid-area: schedule;
+    padding-top: 61px;
+}
+
+.form__row--footer {
+    display: flex;
+}
+
+.form__input--footer {
+
+    height: 68px;
+    width: 456px;
+    border-right: none;
+}
+
+.button--footer {
+    width: 208px;
+    height: 68px;
 }
