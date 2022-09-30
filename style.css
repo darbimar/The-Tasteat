@@ -62,6 +62,10 @@ hr {
     gap: 50px;
 }
 
+a {
+    text-decoration:none;
+  }
+
 .header__nav li:first-child {
     color: #E1B168;
 }
@@ -650,9 +654,30 @@ hr {
     justify-content: end;
 }
 
-.footer__contacts{
+.footer__contacts {
     grid-area: contact;
     padding-top: 61px;
+}
+
+.footer__hashtag {
+    font-size: 22px;
+    color: white;
+}
+
+.footer__addres {
+    margin-top: 34px;
+    color: white;
+    line-height: 30px;
+}
+
+.footer__phone {
+    color: #E1B168;
+    line-height: 30px;
+}
+
+.footer__mail {
+    color: #E1B168;
+    line-height: 30px;
 }
 
 .form__footer {
@@ -660,9 +685,32 @@ hr {
     padding-top: 11px;
 }
 
+.footer__invite {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
 .footer__schedule {
     grid-area: schedule;
     padding-top: 61px;
+}
+
+.footer__schedule p {
+    color: white;
+    line-height: 30px;
+    text-align: right;
+}
+
+.section--left {
+    margin-bottom: 35px;
+    margin-left: 195px;
+   
+}
+
+span {
+    color: #E1B168;
 }
 
 .form__row--footer {
@@ -679,4 +727,22 @@ hr {
 .button--footer {
     width: 208px;
     height: 68px;
+}
+
+.copyright__section {
+    background-color: #292E36;
+    padding: 26px 18px 25px 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright__text {
+    color: #fff;
+}
+
+.copyright__nav ul {
+    color: #E1B168;
+    display: flex;
+    gap: 20px;
+    
 }
