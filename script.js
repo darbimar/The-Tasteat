@@ -10,5 +10,14 @@ $(document).ready(function(){
         initialSlide:0,
         autoplay:true,
         pauseOnFocus:true,
+        responsive: [
+                {
+                  breakpoint: 720,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                }
+            ]
     });
 });
