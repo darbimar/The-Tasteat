@@ -1,10 +1,25 @@
 @media (max-width: 1200px)
     
+    .welcome
+        &__text
+            padding-top: 120px
+        &__title
+            font-size: 90px
+
+    .contact
+        padding-right: 40px
+        &__text
+            width: 250px
+    
+    .story
+        &__image
+            max-width: 70%   
     .menu
         gap: 20px
-
+        &__name
+            font-size: 26px
         &__line
-            width: 120px
+            width: 60px
         &__price
             font-size: 26px
 
@@ -18,6 +33,8 @@
             top: 126px
         &--footer
             width: 180px
+        &--color
+            width: 255px
 
     .services 
             flex-direction: column
@@ -28,9 +45,93 @@
     .form__input--footer 
         width: 330px
 
-@media (max-width: 1024px)
+@media (max-width: 992px)
+    body
+        font-size: 17px
+    .header
+        &__logo
+            max-width: 35%
+        .button
+            width: 200px
+            height: 63px
+        &__nav
+            ul
+                gap: 18px
+        .socials
+            gap: 15px
+    .welcome
+            &__text
+                padding-top: 80px
+            &__title
+                font-size: 70px
+            .button
+                width: 200px
+                height: 63px
+    
+    .contact
+        flex-wrap: wrap
+        padding-right: 40px
+        justify-content: center
+        
+        &__section
+            padding-top: 50px
 
+        &__text
+            width: 250px
+        &__title
+            font-size: 25px
+    
+    .story
+        &__image
+            max-width: 50%  
 
+    .menu
+        flex-direction: column
+        &__list 
+            width: 700px
+        &__line
+            width: 170px
+
+    
 
     .form__input--footer 
         width: 350px
+
+
+@media (max-width: 768px)
+    .header
+        &__contact
+            justify-content: center
+        &__logo
+            max-width: 70%    
+        .button
+            display: none
+
+    .welcome
+        &__text
+            padding-top: 35px
+        &__title
+            font-size: 50px
+        &__descr
+            padding: 16px 0 25px 0
+            line-height: 25px
+    .menu
+
+        &__list 
+            width: 600px
+        &__line
+            display: none
+
+
+@media (max-width: 576px)
+
+    .story
+        flex-direction: column
+        &__image
+            max-width: 100%  
+            padding-left: 45px
+
+    .menu
+        &__position
+            justify-content: flex-start
+            gap: 20px
