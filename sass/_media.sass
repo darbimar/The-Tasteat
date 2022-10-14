@@ -31,10 +31,6 @@
         &__client
             width: 444px
 
-    .blog 
-        &__new
-            width: 520px
-
     .button
         &--position 
             right: 111px
@@ -45,8 +41,16 @@
             width: 255px
 
     .services 
-            flex-direction: column
+        flex-direction: column
 
+        &__text
+            text-align: center
+        &__box
+            justify-content: center
+        
+    .blog 
+        &__new
+            width: 45%
 
     .footer
         padding: 100px 35px 40px 35px
@@ -124,6 +128,10 @@
 
     .form__input--footer 
         width: 350px
+    
+    .popular
+        &__title
+            font-size: 23px
 
 
 @media (max-width: 768px)
@@ -158,18 +166,36 @@
 
     .offers
         &__name
-            font-size: 26px
+            font-size: 30px
         &__cloud
             width: 140px
         &__dish
             flex-direction: row
-            width: 550px
+            width: 510px
         &__dishes
             flex-direction: column
+            align-items: center
         &__text
             flex-direction: column
+        &__image 
+            img 
+                max-width: 90%
         
+    .popular
+        &__dishes
+            flex-wrap: wrap
+        &__dish
+            max-width: 45%
         
+    .button
+        width: 200px
+        height: 63px
+    
+    .blog
+        &__news
+            flex-direction: column
+        &__new
+            width: 100%
 
 
 @media (max-width: 576px)
@@ -187,5 +213,10 @@
 
     
     .offers
-        &__dishes
+        &__dish
+            width: 400px
+
+    .services
+        &__box
             flex-direction: column
+            align-items: center
