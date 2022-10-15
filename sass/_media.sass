@@ -124,14 +124,25 @@
             font-size: 36px
         &__cloud
             width: 150px
-    
 
-    .form__input--footer 
-        width: 350px
     
     .popular
         &__title
             font-size: 23px
+
+    .reservation
+        &__form
+            width: 90%
+            padding: 140px 70px 156px 70px
+    .form
+        &__input
+            width: 45%
+        &__input2
+            width: 30%
+    
+    .footer
+        .form__input--footer 
+            width: 100%
 
 
 @media (max-width: 768px)
@@ -196,7 +207,19 @@
             flex-direction: column
         &__new
             width: 100%
+    
+    .footer
+        grid-template-rows: 1fr 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr
+        grid-template-areas: "logo logo" "hashtag socials" "form form" "contact schedule"
+        &__hashtag
+            justify-content: center
+        .form__input--footer 
+            height: 63px
+            
 
+    .socials--footer
+        justify-content: center
 
 @media (max-width: 576px)
 
@@ -220,3 +243,23 @@
         &__box
             flex-direction: column
             align-items: center
+
+    .reservation
+        &__form
+            padding: 60px 60px 60px 60px
+
+    .form
+        gap: 20px
+        &__row
+            flex-direction: column
+            gap: 20px
+            align-items: center
+        &__input
+            width: 90%
+            height: 60px
+        &__input2
+            width: 90%
+            height: 60px
+    
+    .title
+        font-size: 36px

@@ -486,9 +486,10 @@ a
 	background-color: $background-color
 	padding: 100px 40px 40px 81px
 	display: grid
-	grid-template-columns: 1fr 2fr 1fr
-	grid-template-rows: 1fr 1fr
-	grid-template-areas: "hashtag logo socials" "contact form schedule"
+	// grid-template-columns: 1fr 1fr 1fr
+	// grid-template-rows: max-content
+	// grid-template-areas: "hashtag logo socials" "contact form schedule"
+	grid-template: "hashtag logo socials" 1fr "contact form schedule" 1fr /  1fr 1fr 1fr
 
 .footer__hashtag
 	grid-area: hashtag
