@@ -45,3 +45,4 @@ menuIcon.addEventListener('click', () => {
     header.classList.toggle('header--mobile');
     body.classList.toggle('no-scroll');
 });
+

@@ -150,17 +150,37 @@
 
 @media (max-width: 768px)
     .header
+        display: flex
+        justify-content: space-between
         &__contact
-            justify-content: center
+            justify-content: flex-end
         &__logo
             max-width: 70%  
         &__nav
+            display: none
             ul
-                font-size: 19px  
+                font-size: 19px 
+        hr
+            display: none 
         .button
             display: none
         .socials
             display: none
+        &--mobile
+            height: 100vh
+
+            .button 
+                display: block
+            .header__nav
+                display: flex
+                flex-direction: column
+            .header__link
+                display: flex
+                flex-direction: column
+
+
+    .menu-icon
+        display: block
 
     .welcome
         &__text
