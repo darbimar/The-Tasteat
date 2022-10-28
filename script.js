@@ -46,3 +46,5 @@ menuIcon.addEventListener('click', () => {
     body.classList.toggle('no-scroll');
 });
 
+
+
