@@ -24,8 +24,6 @@
             font-size: 26px
     
     .testimonial
-        &__line
-            width: 380px
         &__text
             font-size: 22px
         &__client
@@ -100,7 +98,7 @@
     .menu
         flex-direction: column
         &__list 
-            width: 700px
+            width: 100%
         &__line
             width: 170px
         &__specialdish
@@ -108,8 +106,6 @@
             text-align: center
     
     .testimonial
-        &__line
-            width: 580px
         &__client
             padding-bottom: 20px
 
@@ -152,6 +148,9 @@
     .header
         display: flex
         justify-content: space-between
+        &__link
+            display: none
+        
         &__contact
             flex-direction: column
         &__logo
@@ -166,38 +165,47 @@
             display: none
         .socials
             display: none
+        .menu-icon
+            display: block
+            top: 20px
+            right: 20px
         &--mobile
             height: 100vh
             display: grid
-            grid-template-columns: max-content
+            grid-template-columns: 1fr 1 fr 1 fr
             grid-template-rows: max-content
-            grid-template-areas: "logo menu-icon" "nav nav" "socials socials"
-
-            .header__nav 
-                grid-area: nav
-                display: flex
-                align-items: center
-                ul
-                    align-items: center
-                    flex-direction: column
+            grid-template-areas: ". logo menu-icon" "nav nav nav" 
+            position: relative
 
             .header__link
                 display: flex
                 flex-direction: column
-            
+                grid-area: nav
+                align-items: center
+                ul
+                    grid-area: socials   
+                    display: flex
+                .header__nav 
+                    grid-area: nav
+                    display: flex
+                    align-items: center
+                    ul
+                        align-items: center
+                        flex-direction: column
+                        font-size: 27px
+
             .header__contact
                 grid-area: logo
-            .socials
-                display: grid
-                grid-area: socials   
+            .menu-icon--active
+                grid-area: menu-icon
                 display: flex
-                
-        .menu-icon
-            display: block
-            grid-area: menu-icon
-            top: 20px
-            right: 20px
-        
+                justify-content: flex-end
+                top: 20px
+                right: 20px
+                position: absolute
+    .no-scroll
+        overflow: hidden
+
     
 
     .welcome
@@ -211,13 +219,11 @@
     .menu
 
         &__list 
-            width: 600px
+            width: 100%
         &__line
             display: none
     
     .testimonial
-        &__line
-            width: 430px
         &__client
             width: 510px
 
@@ -269,26 +275,96 @@
 
 @media (max-width: 576px)
 
+    .header
+        &__contact
+            padding: 20px
+
+    .welcome
+        &__title
+            font-size: 35px
+        &__picture
+            display: none
+        &__text
+            padding-bottom: 25px
+
+    .contact
+        padding-top: 0
+        &__title
+            font-size: 23px
+
     .story
         flex-direction: column
+        padding-top: 60px
         &__image
             max-width: 100%  
-            padding-left: 45px
+        &__title
+            font-size: 33px
+        &__text
+            padding-left: 0
+
 
     .menu
+        padding: 60px 40px 30px 40px
         &__position
             justify-content: flex-start
             gap: 20px
+        &__specialdish
+            width: 100%
+        &__name
+            font-size: 22px
+        &__price
+            font-size: 22px
+        &__list
+            img
+                width: 80px
+                height: 80px
+
+    
+    .testimonial
+        &__wrapper
+            padding: 75px 40px 80px 40px
+        &__client
+            .slick-slide
+                width: 100%
+                padding: 0 30px
+        &__photo
+            width: 80px
+            height: 80px
+        &__name
+            font-size: 22px
+        &__line
+            .slick-slide
+                width: 100%
+                margin-top: 15px
+                margin-bottom: 15px
+        &__text
+            font-size: 18px
+            line-height: 30px
 
     
     .offers
+        padding: 65px 0px
         &__dish
-            width: 400px
+            width: 100%
+    .popular
+        padding: 0 40px 40px 40px
+        &__dishes
+            gap: 10px
 
     .services
+        padding: 70px 40px
+        gap: 50px
         &__box
             flex-direction: column
             align-items: center
+        &__item
+            width: 204px
+            height: 205px
+
+    .blog
+        padding: 60px 40px
+        &__title
+            font-size: 25px
 
     .reservation
         &__form
@@ -306,6 +382,11 @@
         &__input2
             width: 90%
             height: 60px
+
+    .footer
+        img
+            width: 50%
+            height: 50%
     
     .title
-        font-size: 36px
+        font-size: 30px
