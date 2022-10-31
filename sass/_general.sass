@@ -7,16 +7,6 @@ body
 img 
 	max-width: 100%
 
-.header
-	background-color: $background-color
-	font-size: 22px
-
-.header__contact
-	padding: 30px 35px
-	display: flex
-	justify-content: space-between
-	align-items: center
-
 /* Burger */
 
 .menu-icon
@@ -82,33 +72,36 @@ img
 	height: 73px
 	border: 2px solid $text-color2
 	color: $text-color2
-
-.button--phone
-	color: $text-color1
-
-.button--color
-	width: 295px
-	background-color: $text-color2
-	color: $text-color1
+	&--phone
+		color: $text-color1
+	&--color
+		width: 295px
+		background-color: $text-color2
+		color: $text-color1
 
 hr
 	border: 1px solid #5C6168
 
-.header__link
-	padding: 30px 35px
-	display: flex
-	justify-content: space-between
-
-.header__nav ul
-	color: $text-color1
-	display: flex
-	gap: 50px
-
-a
-	text-decoration: none
-
-.header__nav li:first-child
-	color: $text-color2
+.header
+	background-color: $background-color
+	font-size: 22px
+	&__contact
+		padding: 30px 35px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__link
+		padding: 30px 35px
+		display: flex
+		justify-content: space-between
+	&__nav ul
+		color: $text-color1
+		display: flex
+		gap: 50px
+		a
+			text-decoration: none
+		li:first-child
+			color: $text-color2
 
 .socials
 	display: flex
@@ -118,93 +111,74 @@ a
 	padding: 0 30px 0 40px
 	display: flex
 	background-color: $background-color
+	&__text
+		max-width: 720px
+		padding-top: 220px
 
-.welcome__text
-	max-width: 720px
-	padding-top: 220px
+	&__title
+		font-family: 'Cormorant Infant', serif
+		font-size: 100px
+		color: $text-color1
 
-.welcome__title
-	font-family: 'Cormorant Infant', serif
-	font-size: 100px
-	color: $text-color1
+	&__descr
+		color: $text-color1
+		max-width: 616px
+		padding: 26px 0 35px 0
+		line-height: 30px
 
-.welcome__descr
-	color: $text-color1
-	max-width: 616px
-	padding: 26px 0 35px 0
-	line-height: 30px
+	&__picture
+		width: 720px
+		position: relative
 
-.welcome__picture
-	width: 720px
-	position: relative
+	&__image
+		margin-top: 69px
+		// margin-left: 63px
 
-.welcome__image
-	margin-top: 69px
-	// margin-left: 63px
+		&::before
+			width: 30px
+			height: 770px
+			background-color: $text-color1
 
-	&::before
-		width: 30px
-		height: 770px
-		background-color: $text-color1
-
-.welcome__settings
-	position: absolute
-	top: 20px
-	right: 0
+	&__settings
+		position: absolute
+		top: 20px
+		right: 0
 
 .contact
 	background-color: #FFF8F5
 	padding: 100px 132px 60px 40px
 	display: flex
 	justify-content: space-between
-
-.contact__section
-	display: flex
-
-.contact__text
-	padding-left: 20px
-
-.contact__title
-	font-family: 'Cormorant Infant'
-	font-size: 30px
-	padding-bottom: 5px
+	&__section
+		display: flex
+	&__text
+		padding-left: 20px
+	&__title
+		font-family: 'Cormorant Infant'
+		font-size: 30px
+		padding-bottom: 5px
 
 .story
 	display: flex
 	padding: 60px 40px 100px 40px
 	background-color: #FFF8F5
+	&__text
+		padding-left: 45px
+	&__column
+		display: flex
+		justify-content: space-between
+		.story__desc
+			padding-right: 14px
+	&__desc
+		padding-right: 13px
+		padding-top: 20px
+	&__title
+		font-family: 'Cormorant Infant'
+		font-size: 40px
+	&__more
+		line-height: 30px
+		padding-top: 15px
 
-
-.story__text
-	padding-left: 45px
-
-.story__column
-	display: flex
-	justify-content: space-between
-
-	.story__desc
-		padding-right: 14px
-
-.story__desc
-	padding-right: 13px
-	padding-top: 20px
-
-.story__title
-	font-family: 'Cormorant Infant'
-	font-size: 40px
-
-.story__more
-	line-height: 30px
-	padding-top: 15px
-
-.menu
-	display: flex
-	justify-content: space-between
-	padding: 120px 40px 140px 40px
-
-.menu__specialdish
-	width: 491.25px
-	height: 955px
 
 .section
 	font-size: 15px
@@ -223,113 +197,97 @@ a
 	padding-top: 13px
 	line-height: 30px
 
-.menu__image
-	padding-top: 30px
-	padding-bottom: 60px
-
-.menu__list
-	width: 818.75px
-
-.menu__dish
-	font-family: 'Cormorant Infant'
-	font-size: 36px
-	padding-bottom: 40px
-
-.menu__position
-	display: flex
-	justify-content: space-between
-	padding-bottom: 50px
-
-.menu__text
-	padding: 5px 0 5px 20px
-
-.menu__wrapper
-	display: flex
-
-.menu__name
-	font-family: 'Cormorant Infant'
-	font-size: 30px
-	line-height: 40px
-
-.menu__description
-	line-height: 30px
-
-.menu__price
-	font-family: 'Cormorant Infant'
-	font-size: 30px
-	line-height: 40px
-	text-align: center
-	display: flex
-	align-items: center
-
-.menu__line
-	border-bottom: 2px solid #AAAAAA
-	width: 259.73px
-	margin-bottom: 15px
-
-.testimonial
-	background-color: $background-color
-
-.testimonial__wrapper
-	padding: 145px 40px 120px 40px
-
 .section--white, .title--white, .desc--white
 	color: $text-color1
 
-.testimonial__clients
-	margin-top: 60px
+.menu
 	display: flex
-	flex-direction: column
-	gap: 30px
-	position: relative
+	justify-content: space-between
+	padding: 120px 40px 140px 40px
+	&__specialdish
+		width: 491.25px
+		height: 955px
+	&__image
+		padding-top: 30px
+		padding-bottom: 60px
+	&__list
+		width: 818.75px
+	&__dish
+		font-family: 'Cormorant Infant'
+		font-size: 36px
+		padding-bottom: 40px
+	&__position
+		display: flex
+		justify-content: space-between
+		padding-bottom: 50px
+	&__text
+		padding: 5px 0 5px 20px
+	&__wrapper
+		display: flex
+	&__name
+		font-family: 'Cormorant Infant'
+		font-size: 30px
+		line-height: 40px
+	&__description
+		line-height: 30px
+	&__price
+		font-family: 'Cormorant Infant'
+		font-size: 30px
+		line-height: 40px
+		text-align: center
+		display: flex
+		align-items: center
+	&__line
+		border-bottom: 2px solid #AAAAAA
+		width: 259.73px
+		margin-bottom: 15px
 
-.testimonial__client
-	padding: 0 40px
-	width: 544px
+.testimonial
+	background-color: $background-color
+	&__wrapper
+		padding: 145px 40px 120px 40px
+	&__clients
+		margin-top: 60px
+		display: flex
+		flex-direction: column
+		gap: 30px
+		position: relative
+	&__client
+		padding: 0 40px
+		width: 544px
+	.testimonial_content
+		display: flex
+	&__client
+		background-color: #343942
+	&__data
+		margin-left: 30px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+	&__name
+		font-family: 'Cormorant Infant'
+		font-size: 30px
+		line-height: 42px
+		color: $text-color1
+	&__city
+		color: $text-color2
+		line-height: 30px
+	&__text
+		font-family: 'Cormorant Infant'
+		font-size: 24px
+		color: $text-color1
+	&__line
+		border-bottom: 2px solid #AAAAAA
+		width: 100%
+		margin-top: 30px
+		margin-bottom: 32px
+	&__logo
+		position: absolute
+		z-index: +1
+	&__photo
+		position: relative
 
-.testimonial_content
-	display: flex
-
-.testimonial__client
-	background-color: #343942
-
-.testimonial__data
-	margin-left: 30px
-	display: flex
-	align-items: center
-	justify-content: center
-	flex-direction: column
-
-.testimonial__name
-	font-family: 'Cormorant Infant'
-	font-size: 30px
-	line-height: 42px
-	color: $text-color1
-
-.testimonial__city
-	color: $text-color2
-	line-height: 30px
-
-.testimonial__text
-	font-family: 'Cormorant Infant'
-	font-size: 24px
-	color: $text-color1
-
-.testimonial__line
-	border-bottom: 2px solid #AAAAAA
-	width: 100%
-	margin-top: 30px
-	margin-bottom: 32px
-
-.testimonial__logo
-	position: absolute
-	z-index: +1
-
-.testimonial__photo
-	position: relative
-
-.offers
-	padding: 145px 40px 120px 40px
 
 .description
 	display: flex
@@ -340,63 +298,56 @@ a
 .desc--center
 	text-align: center
 
-.offers__dishes
-	margin-top: 20px
-	display: flex
-	gap: 30px
-
-.offers__dish
-	background-image: url('/img/back1.png')
-	padding: 40px
-	display: flex
-	justify-content: space-between
-	width: 665px
-	height: 409px
-
-.offers__cloud
-	width: 167px
-	height: 104px
-	position: relative
-
-	img
+.offers
+	padding: 145px 40px 120px 40px
+	&__dishes
+		margin-top: 20px
+		display: flex
+		gap: 30px
+	&__dish
+		background-image: url('/img/back1.png')
+		padding: 40px
+		display: flex
+		justify-content: space-between
+		width: 665px
+		height: 409px
+	&__cloud
+		width: 167px
+		height: 104px
+		position: relative
+		img
+			position: absolute
+			top: 3px
+			left: 10px
+		h2
+			font-size: 20px
+			text-align: center
+			position: absolute
+			top: -2px
+			left: 54px
+	&__price
+		font-family: 'Cormorant Infant'
+		font-size: 60px
 		position: absolute
-		top: 3px
-		left: 10px
-
-	h2
-		font-size: 20px
-		text-align: center
-		position: absolute
-		top: -2px
-		left: 54px
-
-.offers__price
-	font-family: 'Cormorant Infant'
-	font-size: 60px
-	position: absolute
-	top: 7px
-	left: 37px
+		top: 7px
+		left: 37px
+	&__description
+		margin-top: 37px
+	&__name
+		margin-top: 8px
+		font-family: 'Cormorant Infant'
+		font-size: 40px
+	&__consist
+		margin-top: 5px
+		line-height: 30px
+	&__image
+		display: flex
+		align-items: center
+		width: 100%
 
 .section--black
 	border-top: 1px solid black
 	border-bottom: 1px solid black
-
-.offers__description
-	margin-top: 37px
-
-.offers__name
-	margin-top: 8px
-	font-family: 'Cormorant Infant'
-	font-size: 40px
-
-.offers__consist
-	margin-top: 5px
-	line-height: 30px
-
-.offers__image
-	display: flex
-	align-items: center
-	width: 100%
 
 .white
 	color: $text-color1
@@ -406,28 +357,24 @@ a
 
 .popular
 	padding: 0 40px 120px 40px
-
-.popular__dishes
-	margin-top: 30px
-	margin-bottom: 45px
-	display: flex
-	gap: 30px
-	justify-content: space-between
-
-.popular__dish
-	width: 318px
-
-.popular__title
-	display: flex
-	justify-content: space-between
-	font-family: 'Cormorant Infant'
-	font-size: 30px
-	padding: 10px 0
-	border-bottom: 1px solid #DCDCDC
-	margin-bottom: 15px
-
-	&:hover
-		font-weight: 700
+	&__dishes
+		margin-top: 30px
+		margin-bottom: 45px
+		display: flex
+		gap: 30px
+		justify-content: space-between
+	&__dish
+		width: 318px
+	&__title
+		display: flex
+		justify-content: space-between
+		font-family: 'Cormorant Infant'
+		font-size: 30px
+		padding: 10px 0
+		border-bottom: 1px solid #DCDCDC
+		margin-bottom: 15px
+		&:hover
+			font-weight: 700
 
 .button--center
 	display: block
@@ -438,57 +385,51 @@ a
 	padding: 140px 40px
 	display: flex
 	gap: 90px
-
-.services__box
-	display: flex
-	gap: 30px
-
-.services__item
-	width: 254px
-	height: 235px
-	border: 20px solid #343942
-	display: flex
-	justify-content: center
-	align-items: center
-	flex-direction: column
-
-	h2
-		margin-top: 15px
-		color: $text-color1
+	&__box
+		display: flex
+		gap: 30px
+	&__item
+		width: 254px
+		height: 235px
+		border: 20px solid #343942
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		h2
+			margin-top: 15px
+			color: $text-color1
 
 .blog
 	padding: 140px 40px 100px 40px
-
-.blog__news
-	display: flex
-	justify-content: space-between
-
-.blog__new
-	margin-top: 20px
-	width: 45%
-
-
-.blog__text
-	padding: 50px 46px 38px 46px
-	border: 1px solid #C4C4C4
-
-.blog__title
-	font-family: 'Cormorant Infant'
-	font-size: 30px
-	margin-top: 26px
-	margin-bottom: 24px
-
-.dark
-	filter: brightness(40%)
-
-.blog--center
-	position: relative
+	&__news
+		display: flex
+		justify-content: space-between
+	&__new
+		margin-top: 20px
+		width: 45%
+	&__text
+		padding: 50px 46px 38px 46px
+		border: 1px solid #C4C4C4
+	&__title
+		font-family: 'Cormorant Infant'
+		font-size: 30px
+		margin-top: 26px
+		margin-bottom: 24px
+	&__image
+		position: relative
+		img	
+			width: 100%
+		.dark
+			filter: brightness(40%)
 
 .button--position
 	position: absolute
-	right: 171px
-	top: 156px
+	right: 50%
+	top: 50%
 	z-index: +1
+	transform: translate(50%,-50%)
+
 
 .reservation
 	background-image: url('/img/rest5.jpg')
@@ -496,46 +437,40 @@ a
 	display: flex
 	justify-content: center
 	align-items: center
-
-.reservation__form
-	padding: 140px 140px 156px 140px
-	width: 920px
-	height: 697px
-	background-color: $background-color
-	opacity: 0.95
+	&__form
+		padding: 140px 140px 156px 140px
+		width: 920px
+		height: 697px
+		background-color: $background-color
+		opacity: 0.95
+	&__button
+		display: flex
+		justify-content: center
 
 .form
 	display: flex
 	flex-direction: column
 	gap: 30px
 	margin: 20px 0
-
-.form__row
-	display: flex
-	justify-content: space-between
-
-.form__input
-	height: 70px
-	width: 307px
-	padding: 0 20px
-	background: rgba(0, 0, 0, 0)
-	border: 2px solid #858585
-	outline: none
-
-	&:focus
-		background-color: rgba(255, 255, 255, 0.2)
-
-.form__input2
-	height: 70px
-	width: 198px
-	padding: 0 23px
-	background: rgba(0, 0, 0, 0)
-	border: 2px solid #858585
-	outline: none
-
-.reservation__button
-	display: flex
-	justify-content: center
+	&__row
+		display: flex
+		justify-content: space-between
+	&__input
+		height: 70px
+		width: 307px
+		padding: 0 20px
+		background: rgba(0, 0, 0, 0)
+		border: 2px solid #858585
+		outline: none
+		&:focus
+			background-color: rgba(255, 255, 255, 0.2)
+	&__input2
+		height: 70px
+		width: 198px
+		padding: 0 23px
+		background: rgba(0, 0, 0, 0)
+		border: 2px solid #858585
+		outline: none
 
 .button--white
 	width: 242px
@@ -551,17 +486,45 @@ a
 	// grid-template-rows: max-content
 	// grid-template-areas: "hashtag logo socials" "contact form schedule"
 	grid-template: "hashtag logo socials" 1fr "contact form schedule" 1fr /  1fr 1fr 1fr
+	&__hashtag
+		grid-area: hashtag
+		display: flex
+		align-items: end
+		padding-bottom: 56px
+	&__logo
+		grid-area: logo
+		display: flex
+		justify-content: center
+	&__contacts
+		grid-area: contact
+		padding-top: 61px
+	&__hashtag
+		font-size: 22px
+		color: $text-color1
+	&__addres
+		margin-top: 34px
+		color: $text-color1
+		line-height: 30px
+	&__phone, &__mail
+		color: $text-color2
+		line-height: 30px
+	&__invite
+		color: $text-color1
+		text-align: center
+		line-height: 30px
+		margin-bottom: 25px
+	&__schedule
+		grid-area: schedule
+		padding-top: 61px
+		p
+			color: $text-color1
+			line-height: 30px
+			text-align: right
 
-.footer__hashtag
-	grid-area: hashtag
-	display: flex
-	align-items: end
-	padding-bottom: 56px
+.form__footer
+	grid-area: form
+	padding-top: 11px
 
-.footer__logo
-	grid-area: logo
-	display: flex
-	justify-content: center
 
 .socials--footer
 	grid-area: socials
@@ -569,42 +532,6 @@ a
 	align-items: end
 	padding-bottom: 56px
 	justify-content: end
-
-.footer__contacts
-	grid-area: contact
-	padding-top: 61px
-
-.footer__hashtag
-	font-size: 22px
-	color: $text-color1
-
-.footer__addres
-	margin-top: 34px
-	color: $text-color1
-	line-height: 30px
-
-.footer__phone, .footer__mail
-	color: $text-color2
-	line-height: 30px
-
-.form__footer
-	grid-area: form
-	padding-top: 11px
-
-.footer__invite
-	color: $text-color1
-	text-align: center
-	line-height: 30px
-	margin-bottom: 25px
-
-.footer__schedule
-	grid-area: schedule
-	padding-top: 61px
-
-	p
-		color: $text-color1
-		line-height: 30px
-		text-align: right
 
 .section--left
 	margin-bottom: 35px
@@ -625,19 +552,18 @@ span
 	width: 208px
 	height: 68px
 
-.copyright__section
+.copyright
 	background-color: $background-color
 	padding: 26px 18px 25px 18px
 	display: flex
 	justify-content: space-between
-
-.copyright__text
-	color: $text-color1
-
-.copyright__nav ul
-	color: $text-color2
-	display: flex
-	gap: 20px
+	&__text
+		color: $text-color1
+	&__nav 
+		ul
+			color: $text-color2
+			display: flex
+			gap: 20px
 
 .slick-list
 	overflow: hidden
