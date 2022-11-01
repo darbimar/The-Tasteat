@@ -258,14 +258,27 @@
             width: 100%
     
     .footer
-        grid-template-rows: 1fr 1fr 1fr 1fr
+        &__logo
+            img
+                max-height: 70%
+        grid-template-rows: 1fr 0.5fr 1fr 1fr
         grid-template-columns: 1fr 1fr
         grid-template-areas: "logo logo" "hashtag socials" "form form" "contact schedule"
-        &__hashtag
-            justify-content: center
-        .form__input--footer 
-            height: 63px
-            
+        &__contacts
+            margin: 0 auto
+            text-align: center
+        &__addres
+            margin-top: 15px
+        &__schedule
+            text-align: center
+            margin: 0 auto
+            p
+                text-align: center
+            .section--left
+                margin-bottom: 18px
+                margin-left: 0
+                p
+                    text-align: center
 
     .socials--footer
         justify-content: center
@@ -382,9 +395,22 @@
         gap: 15px
 
     .footer
-        img
-            width: 50%
-            height: 50%
+        grid-template-rows: max-content
+        grid-template-columns: 1fr
+        grid-template-areas: "logo" "hashtag" "socials" "form" "contact" "schedule"
+        &__contacts, &__schedule
+            padding-top: 30px
+        &__hashtag
+            justify-content: center
+        .form__input--footer 
+            height: 63px
+
+    .copyright
+        flex-direction: column
+        gap: 15px
+        &__nav
+            ul
+                gap: 11px
     
     .title
         font-size: 30px
